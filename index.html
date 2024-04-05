@@ -274,9 +274,10 @@ unzipped/extracted the file, you should end up with a folder called
 working Unix-like shell environment. We will be using Bash (<a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" class="external-link">Bourne Again
 Shell</a>) which is standard on Linux and macOS. Some macOS users
 (Catalina or later) will have zsh (Z shell) as their default version.
-Even if you are a Windows user, learning Bash will open up a powerful
-set of tools on your personal machine, and familiarize you with the
-standard remote interface used on most servers and supercomputers.</p>
+Even if you are a Windows or Android user, learning Bash will open up a
+powerful set of tools on your personal machine, and familiarize you with
+the standard remote interface used on most servers and
+supercomputers.</p>
 <div id="terminal-setup" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -287,7 +288,8 @@ standard remote interface used on most servers and supercomputers.</p>
 <div class="callout-content">
 <p>Bash is the default shell on most Linux distributions and older
 versions of macOS. Windows users will need to install Git Bash to
-provide a Unix-like environment.</p>
+provide a Unix-like environment. Android users will need to install
+Termux.</p>
 <ul><li><p><strong>Linux:</strong> The default shell is usually Bash, but if
 your machine is set up differently you can run it by opening a terminal
 and typing <code>bash</code> followed by the <kbd>enter</kbd> key. There
@@ -321,9 +323,21 @@ computer or server that already has a Unix Shell from your Windows
 machine. This can be done through a Secure Shell (SSH) client. One
 client available for free for Windows is <a href="https://www.putty.org/" class="external-link">PuTTY</a>.</p>
 </li>
-</ul><p>If you encounter issues, the Carpentries has a <a href="https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions" class="external-link">Configuration
-Problems and Solutions wiki page</a> that may help.</p>
-</div>
+<li>
+<p><strong>Android:</strong> On Android <a href="https://termux.dev/en/" class="external-link">Termux</a> provides a Bash shell
+environment:</p>
+<ul><li>Either install <a href="https://f-droid.org/en/" class="external-link">F-droid</a> and
+then install <a href="https://f-droid.org/en/packages/com.termux/" class="external-link">Termux</a>, or
+download the <a href="https://f-droid.org/en/packages/com.termux/" class="external-link">Termux APK file</a>
+and install it directly. Be sure to download these from reputable
+sources, either F-droid or the official GitHub releases.</li>
+<li>Once installed, start Termux and get the packages needed</li>
+</ul><pre><code>pkg update &amp;&amp; pkg upgrade
+pkg install emacs
+pkg install nano
+pkg install wget</code></pre>
+</li>
+</ul></div>
 </div>
 </div>
 <div id="data-files" class="callout prereq">
@@ -343,20 +357,20 @@ this step). You should end up with a new folder called
 <li>
 <p>Open the terminal and type <code>ls</code> followed by the
 <kbd>enter</kbd> key.</p>
-<div class="codewrapper sourceCode" id="cb1">
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
 </div>
 <p>You should see a list of files and folders in your current
 directory.</p>
 </li>
 <li>
 <p>Then type:</p>
-<div class="codewrapper sourceCode" id="cb2">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre>
 </div>
 <p>This command will show you where you are in your file system, which
 should now be your home directory. In the lesson, you will find out more
@@ -417,8 +431,8 @@ with the data in <code>shell-lesson</code> folder.</p>
   "url": "https://librarycarpentry.github.io/lc-shell/index.html",
   "identifier": "https://librarycarpentry.github.io/lc-shell/index.html",
   "dateCreated": "2018-04-12",
-  "dateModified": "2024-04-02",
-  "datePublished": "2024-04-02"
+  "dateModified": "2024-04-05",
+  "datePublished": "2024-04-05"
 }
 
   </script><script>
