@@ -2,13 +2,13 @@
 title: Setup
 ---
 
-To participate in this Library Carpentry lesson, you will need a working Unix-like shell environment. We will be using Bash ([Bourne Again Shell](https://en.wikipedia.org/wiki/Bash_\(Unix_shell\))) which is standard on Linux and macOS. Some macOS users (Catalina or later) will have zsh (Z shell) as their default version. Even if you are a Windows user, learning Bash will open up a powerful set of tools on your personal machine, and familiarize you with the standard remote interface used on most servers and supercomputers.
+To participate in this Library Carpentry lesson, you will need a working Unix-like shell environment. We will be using Bash ([Bourne Again Shell](https://en.wikipedia.org/wiki/Bash_\(Unix_shell\))) which is standard on Linux and macOS. Some macOS users (Catalina or later) will have zsh (Z shell) as their default version. Even if you are a Windows or Android user, learning Bash will open up a powerful set of tools on your personal machine, and familiarize you with the standard remote interface used on most servers and supercomputers.
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
 ## Terminal Setup
 
-Bash is the default shell on most Linux distributions and older versions of macOS. Windows users will need to install Git Bash to provide a Unix-like environment.
+Bash is the default shell on most Linux distributions and older versions of macOS. Windows users will need to install Git Bash to provide a Unix-like environment.  Android users will need to install Termux.
 
 - **Linux:** The default shell is usually Bash, but if your machine is set up differently you can run it by opening a terminal and typing `bash` followed by the <kbd>enter</kbd> key. There is no need to install anything. Look for Terminal in your applications to start the Bash shell.
 
@@ -22,7 +22,16 @@ Bash is the default shell on most Linux distributions and older versions of macO
 
   There are also some more advanced solutions available for running Bash commands on Windows. A Bash shell command-line tool is available for Windows 10, which you can use if you enable the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). You can also run Bash commands on a remote computer or server that already has a Unix Shell from your Windows machine. This can be done through a Secure Shell (SSH) client. One client available for free for Windows is [PuTTY](https://www.putty.org/).
 
-If you encounter issues, the Carpentries has a [Configuration Problems and Solutions wiki page](https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions) that may help.
+- **Android:** On Android [Termux](https://termux.dev/en/) provides a Bash shell environment:
+  
+  - Either install [F-droid](https://f-droid.org/en/) and then install [Termux](https://f-droid.org/en/packages/com.termux/), or download the [Termux APK file](https://f-droid.org/en/packages/com.termux/) and install it directly.  Be sure to download these from reputable sources, either F-droid or the official GitHub releases.
+  - Once installed, start Termux and get the packages needed
+```
+pkg update && pkg upgrade
+pkg install emacs
+pkg install nano
+pkg install wget
+```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
