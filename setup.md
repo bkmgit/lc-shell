@@ -41,6 +41,8 @@ pkg install wget
 
 You need to download some files to follow this lesson:
 
+### Using a computer with a graphical user interface desktop
+
 1. Download [shell-lesson.zip](data/shell-lesson.zip) and move the file to your Desktop.
 2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `shell-lesson` on your Desktop.
 3. Open the terminal and type `ls` followed by the <kbd>enter</kbd> key.
@@ -59,4 +61,33 @@ You need to download some files to follow this lesson:
 
     This command will show you where you are in your file system, which should now be your home directory. In the lesson, you will find out more about the commands `ls`, `pwd` and how to work with the data in `shell-lesson` folder.
 
+### Using a terminal
+
+1. Download the file by typing `curl -O https://bkmgit.github.io/lc-shell/data/shell-lesson.zip`
+followed by the <kbd>enter</kbd> key.
+
+    ```bash
+    $ curl -O https://bkmgit.github.io/lc-shell/data/shell-lesson.zip
+    ```
+
+2. Extract the file into a folder using
+
+    ```bash
+    $ unzip shell-lesson.zip -d shell-lesson
+    ```
+
+3.Type `ls` followed by the <kbd>enter</kbd> key.
+
+    ```bash
+    $ ls
+    ```
+
+    You should see a list of files and folders in your current directory.
+
+4. Then type:
+
+    ```bash
+    $ pwd
+    ```
+    
 ::::::::::::::::::::::::::::::::::::::::::::::::::
