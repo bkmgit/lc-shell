@@ -76,7 +76,7 @@ followed by the <kbd>enter</kbd> key.
     $ unzip shell-lesson.zip -d shell-lesson
     ```
 
-3.Type `ls` followed by the <kbd>enter</kbd> key.
+3. Type `ls` followed by the <kbd>enter</kbd> key:
 
     ```bash
     $ ls
