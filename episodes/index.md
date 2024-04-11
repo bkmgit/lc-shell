@@ -13,6 +13,10 @@ This Library Carpentry lesson introduces librarians to the Unix Shell. At the co
 
 ## Prerequisites
 
-To complete this lesson, you will need a Unix-like shell environment -see [Setup](learners/setup.md). You will also need to download the file **[shell-lesson.zip](data/shell-lesson.zip)** to your *desktop* and extract it there (once you have unzipped/extracted the file, you should end up with a folder called "shell-lesson").
+To complete this lesson, you will need a Unix-like shell environment -see [Setup](learners/setup.md). You will also need to download the file **[shell-lesson.zip](data/shell-lesson.zip)** to your *desktop* and extract it there (once you have unzipped/extracted the file, you should end up with a folder called "shell-lesson").  If using the command line, you can download the file using
+```
+$ curl -O https://bkmgit.github.io/lc-shell/data/shell-lesson.zip
+$ unzip shell-lesson.zip -d shell-lesson
+```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
